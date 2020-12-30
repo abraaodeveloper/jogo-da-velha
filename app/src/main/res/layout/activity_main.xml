@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#5F9F9F">
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="495dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Jogador X: "
+                android:textSize="25dp"
+                />
+
+            <TextView
+                android:id="@+id/pontosX"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text=" - "
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text="Jogador O"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/pontosO"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:text=" - "
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusJogada"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:text="A vez é do jogador ..."
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="308dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="107dp"
+                android:layout_height="344dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt11"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"/>
+
+                <Button
+                    android:id="@+id/bt21"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt31"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"
+                />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="106dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt12"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"
+                />
+
+                <Button
+                    android:id="@+id/bt22"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"/>
+
+                <Button
+                    android:id="@+id/bt32"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/bt13"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"/>
+
+                <Button
+                    android:id="@+id/bt23"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"/>
+
+                <Button
+                    android:id="@+id/bt33"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text=""
+                    android:textSize="50dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/reiniciarjogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reiniciar jogo" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
